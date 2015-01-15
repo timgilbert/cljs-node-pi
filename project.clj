@@ -1,6 +1,6 @@
 (defproject cljs-node-pi "0.1.0-SNAPSHOT"
-  :description "FIXME: write this!"
-  :url "http://example.com/FIXME"
+  :description "Small project for running a cljs compiler and uploading the results to a rpi"
+  :url "https://github.com/timgilbert/cljs-node-pi"
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-2665"]]
@@ -11,6 +11,8 @@
             [lein-npm "0.4.0"]]
 
   :source-paths ["src"]
+
+  :clean-targets ["out"]
 
   :cljsbuild {
     :builds [{:id "cljs-node-pi"
