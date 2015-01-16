@@ -17,6 +17,7 @@
   :cljsbuild {
     :builds [{:id "cljs-node-pi"
               :source-paths ["src"]
+              :notify-command ["./rsync.sh"]
               :compiler {
                 :output-to "out/cljs_node_pi.js"
                 :output-dir "out"
