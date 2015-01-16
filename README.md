@@ -15,7 +15,7 @@ In my own setup, I'm running on OS/X locally and deploying to a PI running headl
   [as described here](http://www.raspberrypi.org/forums/viewtopic.php?f=66&t=18207)
   so you can address it as _hostname_.local instead of by IP address.
 * Update the pi's server name (or IP) and username in `rsync.sh`.
-* Create the directory rsync will copy files into on the pi (default: 
+* Create the directory which rsync will copy files into on the pi (default: 
   `mkdir -p ~pi/src/rsync`)
 * Add your local development environment's ssh to `~/.ssh/authorized_keys` on the 
   pi as usual, so that you can ssh from the local environment to the pi with no password.
