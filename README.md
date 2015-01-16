@@ -26,10 +26,9 @@ In my own setup, I'm running on OS/X locally and deploying to a PI running headl
 ## Development
 
 * Locally: run `lein cljsbuild auto`.
-** This should start the build process. Whenever you save a ClojureScript file, it will
-   be recompiled and copied to the pi via rsync over ssh.
+  * This should start the build process. Whenever you save a ClojureScript file, it will
+    be recompiled and copied to the pi via rsync over ssh.
 * On the pi: go into the remote directory you created and verify that the files are there
 * On the pi: `nodemon run.js`
 * Make some changes and save a file. `rsync.sh` should copy them to the pi, the `nodemon`
   should recognised that files have changed and restart the node process.
- 
